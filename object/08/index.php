@@ -9,9 +9,12 @@ $pinigine = new Pinigine();
 $pinigine->ideti(1); // Pridedame 1 į metalinius pinigus
 $pinigine->ideti(5); // Pridedame 5 į popierinius pinigus
 $pinigine->ideti(3); // Pridedame 3 į popierinius pinigus
-
+$pinigine->ideti(1); // Pridedame 1 į metalinius pinigus
+$pinigine->ideti(10); // Pridedame 5 į popierinius pinigus
+$pinigine->ideti(200);
 // Skaičiuojame ir atspausdiname sumą
 $pinigine->skaiciuoti();
-
+echo "Monetos: " . $pinigine->monetos() . "<br>";
+echo "Banknotai: " . $pinigine->banknotai() . "<br>";
 
 ?>
