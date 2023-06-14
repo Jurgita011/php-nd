@@ -14,7 +14,6 @@ $pinigine->ideti(10); // Pridedame 5 į popierinius pinigus
 $pinigine->ideti(200);
 // Skaičiuojame ir atspausdiname sumą
 $pinigine->skaiciuoti();
-echo "Monetos: " . $pinigine->monetos() . "<br>";
-echo "Banknotai: " . $pinigine->banknotai() . "<br>";
+
 
 ?>
