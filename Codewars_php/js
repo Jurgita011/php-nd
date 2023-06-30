@@ -1,0 +1,17 @@
+<?php
+
+function regexDivisibleBy(n) {
+  if (n < 1 || n > 18) {
+    return ''; // Tuščia eilutė, jei n yra netinkamas
+  }
+
+  const regex = `^(0|1)(0|1)*${n}$`;
+  return regex;
+}
+
+// Pavyzdys naudojant funkciją
+const n = 3;
+const regex = regexDivisibleBy(n);
+const input = '110';
+const isDivisible = new RegExp(regex).test(input);
+console.log(isDivisible); // true
